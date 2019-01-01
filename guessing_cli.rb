@@ -3,17 +3,17 @@
 
 def run_guessing_game
  
- die_roll = 1 + rand(6)
+ die_roll = (1 + rand(6)).to_s
  puts "Guess a number between 1 and 6."
  guess = gets.chomp.to_s
  
  if guess == "exit"
  return "Goodbye"
  
- elsif guess == die_roll.to_s
+ elsif guess == die_roll
    return "You guessed the correct number!"
    
- else guess != die_roll.to_s
+ else guess != die_roll
    return "The computer guessed #{die_roll}"
  
  end
