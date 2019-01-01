@@ -8,7 +8,7 @@ def run_guessing_game
  puts "Guess a number between 1 and 6."
  guess = gets.chomp 
  
- if guess == die_roll
+ if die_roll == guess
    puts "You guessed the correct number!"
  else puts "The computer guessed #{die_roll}"
 end 
