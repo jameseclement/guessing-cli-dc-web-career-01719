@@ -9,12 +9,12 @@ def run_guessing_game
  
  if guess == "exit"
  return "Goodbye"
+ 
  elsif guess == die_roll.to_s
    return "You guessed the correct number!"
+   
  else guess != die_roll.to_s
    return "The computer guessed #{die_roll}"
- elsif guess == "exit"
- return "Goodbye"
- else 
-end 
+ 
+ end
  end
