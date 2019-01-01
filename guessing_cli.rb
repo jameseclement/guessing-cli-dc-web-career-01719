@@ -9,9 +9,9 @@ def run_guessing_game
  guess = gets.chomp.to_s
  
  if guess == die_roll
-   puts "You guessed the correct number!"
- else puts "The computer guessed #{die_roll}"
+   return "You guessed the correct number!"
+ else
+   return "The computer guessed #{die_roll}"
 end 
 end 
-puts "Goodbye!"
  end
