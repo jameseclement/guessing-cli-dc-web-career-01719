@@ -11,7 +11,7 @@ def run_guessing_game
    return "You guessed the correct number!"
  elsif guess != die_roll
    return "The computer guessed #{die_roll}"
- elsif guess == "exit"
+ elsi guess == "exit"
  return "Goodbye"
 end 
  end
