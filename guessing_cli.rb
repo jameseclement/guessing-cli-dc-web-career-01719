@@ -11,7 +11,7 @@ def run_guessing_game
  if guess == die_roll
    puts "You guessed the correct number!"
  else puts "The computer guessed #{die_roll}"
-   
 end 
 end 
+puts "Goodbye"
  end
