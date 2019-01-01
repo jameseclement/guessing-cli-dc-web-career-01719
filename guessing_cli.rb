@@ -6,7 +6,7 @@ def run_guessing_game
  until guess == "exit"
  die_roll = 1 + rand(6)
  puts "Guess a number between 1 and 6."
- guess = gets.chomp 
+ guess = gets.chomp.to_s
  
  if die_roll == guess
    puts "You guessed the correct number!"
