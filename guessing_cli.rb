@@ -2,7 +2,7 @@
 
 
 def run_guessing_game
-   loop do
+   loop {
        puts "Guess a number between 1 and 6."
        your_guess = gets.chomp
        die_roll = rand(1..6)
@@ -16,5 +16,5 @@ def run_guessing_game
          else
            puts "Invalid input"
          end
-       end
+   }
      end
