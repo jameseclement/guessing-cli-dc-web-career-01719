@@ -9,9 +9,9 @@ def run_guessing_game
        if your_guess == "exit"
          puts "Goodbye!"
          break
-       elsif guess.to_i == die_roll
+       elsif your_guess.to_i == die_roll
            puts "You guessed the correct number!"
-         elsif guess.to_i != die_roll
+         elsif your_guess.to_i != die_roll
            puts "The computer guessed #{die_roll}."
          else
            puts "Invalid input"
