@@ -2,19 +2,19 @@
 
 
 def run_guessing_game
- 
- die_roll = (1 + rand(6)).to_s
- puts "Guess a number between 1 and 6."
- guess = gets.chomp.to_s
- 
- if guess == "exit"
- return "Goodbye"
- 
- elsif guess == die_roll
-   return "You guessed the correct number!"
-   
- else guess != die_roll
-   return "The computer guessed #{die_roll}"
- 
- end
- end
+   loop do
+       puts "Guess a number between 1 and 6."
+       guess = gets.chomp
+       computer_number = rand(1..6)
+       if guess == "exit"
+         puts "Goodbye!"
+         break
+       elsif guess.to_i == computer_number
+           puts "You guessed the correct number!"
+         elsif guess.to_i != computer_number
+           puts "The computer guessed #{computer_number}."
+         else
+           puts "Invalid input"
+         end
+       end
+     end
